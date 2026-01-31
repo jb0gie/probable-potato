@@ -1,47 +1,65 @@
-# Vite + WebJSX Template Repository
+# 🥔 Probable Potato
 
-![Screenshot](https://s2.loli.net/2025/10/02/eiYOHwm9E23gRhZ.png)
+The Ultimate Spud Probability Game!
 
-This is a template repository for creating an initialized front-end project. Clone this template and those libraries are pre-installed and pre-configured without further actions:
+![Potato Game](https://img.shields.io/badge/potato-game-brightgreen) ![Spud Counter](https://img.shields.io/badge/spuds-rolling-orange)
 
-- [Vite](https://vite.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [WebJSX](https://webjsx.org) with [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components) support (Shadow DOM not included)
-- [UnoCSS](https://unocss.dev) with Tailwind CSS-reset presets and attributify mode enabled
-- [Biome](https://biomejs.dev) with tab character indentation (instead of spaces) and avoiding semicolons
-- `.gitignore` file with whitelist mode
+## What is This?
 
-## How to Use
-- Click `Use this template` at the top-right, then `Create a new repository`
-- Fill in the information
-- Clone the new project to your local machine
-- `npm i` then `npm run dev`
-- See the template on your browser
+A fun probability game where you roll the virtual dice to discover what kind of potato fate has in store for you. Will you find the legendary tater, or just another common spud?
 
-Don’t forget to:
+### 🎲 The Odds
 
-- Modify this `readme.md` file
-- Modify the name in `package.json` config
-- Check the `.gitignore` (since it is in whitelist mode)
-- Check the preset of `biome.json`, and set the git hook
-- Remove unlicense statement and replace it as your own (if necessary)
+- **🥔 Common Tater** (60%) - Just a regular spud. That's spec-tater-ly average!
+- **✨ Golden Potato** (25%) - A-peel-ing find!
+- **👑 Russet Royalty** (10%) - Tuber-iffic!
+- **🌟 Legendary Tater** (5%) - Holy mashed potatoes! Triggers confetti celebration!
 
-## But Why
-The vanilla-flavored (a.k.a. native environment) front-end is more powerful than we expected, especially for people who have a lot of experience with “modern frameworks” like React, Vue, Angular, etc. Web Components is a really powerful technology and you should have a try and consider replacing the bulky frameworks.
+## 🎮 How to Play
 
-I made a lightweight framework (which in learning purpose) based on Web Components technology called [Laterano](https://codeberg.org/Astrian/Laterano) and works fine. However, it doesn’t resolve an issue to traditional Web Components. For example, the editor cannot highlight the syntax of inline HTML strings, also it cannot check the type of the components, etc.
+1. Click "Roll the Tater!" to test your luck
+2. Watch the animation as the spuds shuffle
+3. Discover your potato destiny!
+4. Try to beat the odds and find the legendary tater
 
-That’s why WebJSX was introduced. WebJSX is a JSX/TSX transpiler instead of a fully functional front-end framework. You can enjoy the benefits from JSX/TSX language, such as HTML syntax highlighting, list rendering and conditional rendering, type check and more. I believe it is a great improvement of the development experience of Web Components (although I am actually not a fan of JSX/TSX language).
+## 🎵 Features
 
-Since Vite doesn’t provide the project initialize preset of Web Components/WebJSX, I created this template repository to avoid re-configurating when I create a new front-end project.
+- **Sound Effects**: Each potato rarity has its own sound
+- **Confetti Celebration**: Legendary finds trigger a potato-colored confetti party!
+- **Statistics Tracking**: See your spud collection progress
+- **Potato Puns**: Plenty of a-peel-ing wordplay
 
-For UnoCSS and Biome, it just my personal preference.
+## 🛠️ Built With
 
-UnoCSS is a lighter version of Tailwind and give you a larger flexibility of styling and higher performance on CSS generating. Same reason of choosing Biome instead of Prettier.
+- [Vite](https://vite.dev) - Fast development
+- [TypeScript](https://www.typescriptlang.org) - Type safety
+- [WebJSX](https://webjsx.org) - JSX for Web Components
+- [UnoCSS](https://unocss.dev) - Styling
+- [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) - Celebrations
+- 🥔 Pure Potato Energy
 
-You may notice I prefer to use tab character and avoid semicolons as indentation. This is a very personal choice, which I believe it can save more storage no matter on local machine or remote hosting. Also I think tab character can let user to choose their indentation length instead of fixed 2 or 4 width.
+## 🚀 Getting Started
 
-You can clone and get rid of all my personal quirk anytime.
+```bash
+npm install
+npm run dev
+```
 
-## (Un)license
-This template is totally in public domain and anyone can use, modify and distribute the template as they wish. See [UNLICENSE](./UNLICENSE)
+Then open your browser and start rolling those taters!
+
+## 🥔 Potato Puns Included
+
+- "This game is a-peel-ing!"
+- "That's spec-tater-ly awesome!"
+- "Don't be a couch potato!"
+- "Let's get this mash started!"
+- "This is tuber-iffic!"
+- "I'm rooting for you!"
+
+## 📜 License
+
+This project is totally in the public domain. Feel free to use, modify, and distribute as you wish. See [UNLICENSE](./UNLICENSE)
+
+---
+
+**May the spuds be ever in your favor!** 🥔✨
