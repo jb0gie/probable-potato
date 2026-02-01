@@ -13,13 +13,15 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.4",
-		"@unocss/preset-attributify": "^66.5.2",
+		"autoprefixer": "^10.4.24",
+		"playwright": "^1.58.1",
+		"postcss": "^8.5.6",
+		"tailwindcss": "^3.4.19",
 		"typescript": "~5.8.3",
-		"unocss": "^66.5.2",
 		"vite": "^7.0.4"
 	},
 	"dependencies": {
-		"@unocss/reset": "^66.5.2",
+		"rippleui": "^1.12.1",
 		"webjsx": "^0.0.73"
 	}
 }

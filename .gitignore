@@ -10,7 +10,8 @@
 !tsconfig.json
 !.gitignore
 !vite.config.ts
-!uno.config.ts
+!tailwind.config.js
+!postcss.config.js
 !biome.json
 
 # Backbone files

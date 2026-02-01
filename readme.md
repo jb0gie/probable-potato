@@ -34,7 +34,8 @@ A fun probability game where you roll the virtual dice to discover what kind of 
 - [Vite](https://vite.dev) - Fast development
 - [TypeScript](https://www.typescriptlang.org) - Type safety
 - [WebJSX](https://webjsx.org) - JSX for Web Components
-- [UnoCSS](https://unocss.dev) - Styling
+- [Tailwind CSS](https://tailwindcss.com) - Styling
+- [Ripple UI](https://www.ripple-ui.com) - UI Components
 - [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) - Celebrations
 - 🥔 Pure Potato Energy
 

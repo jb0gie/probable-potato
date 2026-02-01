@@ -248,31 +248,16 @@ class PotatoProbability extends HTMLElement {
 				: "0.0"
 
 		const content = (
-			<div w="100%" flex="~ col" items="center" gap="6">
-				<div
-					p="6"
-					rounded="1.5rem"
-					bg="#FFF8DC dark:#2a2418"
-					border="~ 4 #8B4513"
-					shadow="lg"
-					w="100%"
-					max-w="28rem"
-					flex="~ col"
-					items="center"
-					gap="4"
-				>
-					<div w="100%" flex="~" justify="between" items="center" mb="2">
-						<span text="sm #8B4513" font="medium">
+			<div className="w-full flex flex-col items-center gap-6">
+				<div className="p-6 rounded-[1.5rem] bg-[#FFF8DC] dark:bg-[#2a2418] border-4 border-[#8B4513] shadow-lg w-full max-w-[28rem] flex flex-col items-center gap-4">
+					<div className="w-full flex justify-between items-center mb-2">
+						<span className="text-sm text-[#8B4513] font-medium">
 							🥔 Spuds Rolled: {this.rollCount}
 						</span>
 						<button
 							type="button"
 							onClick={this.toggleSound}
-							p="2"
-							rounded="full"
-							bg="transparent hover:#8B4513/10"
-							text="#8B4513"
-							font="mono"
+							className="p-2 rounded-full bg-transparent hover:bg-[#8B4513]/10 text-[#8B4513] font-mono"
 							title="Toggle Sound"
 						>
 							{sounds.enabled ? "🔊" : "🔇"}
@@ -280,33 +265,31 @@ class PotatoProbability extends HTMLElement {
 					</div>
 
 					<div
-						w="100%"
-						h="12rem"
-						flex="~"
-						items="center"
-						justify="center"
-						bg={result ? `${result.color}20` : "#F5DEB3"}
-						rounded="1rem"
-						transition="all"
-						border="~ 2"
-						border-color={result ? result.color : "#D2B48C"}
+						className="w-full h-48 flex items-center justify-center rounded-[1rem] transition-all border-2"
+						style={{
+							backgroundColor: result ? `${result.color}20` : "#F5DEB3",
+							borderColor: result ? result.color : "#D2B48C",
+						}}
 					>
 						{result ? (
-							<div flex="~ col" items="center" gap="2">
-								<span text="6rem">{result.emoji}</span>
-								<span text="xl" font="bold" style={`color: ${result.color}`}>
+							<div className="flex flex-col items-center gap-2">
+								<span className="text-[6rem]">{result.emoji}</span>
+								<span
+									className="text-xl font-bold"
+									style={{ color: result.color }}
+								>
 									{result.name}
 								</span>
 							</div>
 						) : (
-							<span text="4rem #8B4513" font="medium">
+							<span className="text-[4rem] text-[#8B4513] font-medium">
 								🎲 Ready to Roll!
 							</span>
 						)}
 					</div>
 
 					{result && (
-						<p text="center #5D4037" font="medium" px="4">
+						<p className="text-center text-[#5D4037] font-medium px-4">
 							{result.message}
 						</p>
 					)}
@@ -315,46 +298,39 @@ class PotatoProbability extends HTMLElement {
 						type="button"
 						onClick={this.rollTheTater}
 						disabled={this.isRolling}
-						p="y-4 x-8"
-						rounded="1rem"
-						bg="#8B4513 hover:#A0522D disabled:#D2B48C"
-						color="white"
-						font="bold"
-						text="lg"
-						shadow="md"
-						transform={this.isRolling ? "scale-95" : "hover:scale-105"}
-						transition="all"
-						cursor={this.isRolling ? "not-allowed" : "pointer"}
+						className={`py-4 px-8 rounded-[1rem] font-bold text-lg shadow-md transition-all ${
+							this.isRolling
+								? "bg-[#D2B48C] cursor-not-allowed scale-95"
+								: "bg-[#8B4513] hover:bg-[#A0522D] hover:scale-105 cursor-pointer text-white"
+						}`}
 					>
 						{this.isRolling ? "Rolling..." : "🎲 Roll the Tater!"}
 					</button>
 
 					{this.rollCount > 0 && (
-						<div w="100%" p="4" rounded="0.75rem" bg="#8B4513/10" mt="2">
-							<p text="sm #8B4513" font="bold" mb="2">
+						<div className="w-full p-4 rounded-[0.75rem] bg-[#8B4513]/10 mt-2">
+							<p className="text-sm text-[#8B4513] font-bold mb-2">
 								📊 Spud Statistics:
 							</p>
-							<div grid="~ cols-2" gap="2" text="xs #5D4037">
+							<div className="grid grid-cols-2 gap-2 text-xs text-[#5D4037]">
 								<div>🥔 Common: {this.stats.common}</div>
 								<div>✨ Golden: {this.stats.golden}</div>
 								<div>👑 Russet: {this.stats.russet}</div>
 								<div>🌟 Legendary: {this.stats.legendary}</div>
 							</div>
-							<p text="xs #8B4513" mt="2" font="medium">
+							<p className="text-xs text-[#8B4513] mt-2 font-medium">
 								Legendary Rate: {winRate}% (Expected: 5%)
 							</p>
 						</div>
 					)}
 				</div>
 
-				<div text="sm #8B4513/60" text-center>
+				<div className="text-sm text-[#8B4513]/60 text-center">
 					<p>
 						🥔 Probabilities: Common 60% | Golden 25% | Russet 10% | Legendary
 						5%
 					</p>
-					<p mt="2" font="italic">
-						"May the spuds be ever in your favor!"
-					</p>
+					<p className="mt-2 italic">"May the spuds be ever in your favor!"</p>
 				</div>
 			</div>
 		)
